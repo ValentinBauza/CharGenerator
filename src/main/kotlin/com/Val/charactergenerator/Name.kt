@@ -1,4 +1,4 @@
-package com.Val.NPCGenerator
+package com.Val.charactergenerator
 
 class Name(
     private val nameLength: Int,

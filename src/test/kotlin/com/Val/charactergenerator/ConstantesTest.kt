@@ -1,4 +1,4 @@
-import com.Val.NPCGenerator.Constantes
+import com.Val.charactergenerator.Constantes
 import io.kotest.assertions.throwables.shouldNotThrow
 import io.kotest.core.spec.style.StringSpec
 

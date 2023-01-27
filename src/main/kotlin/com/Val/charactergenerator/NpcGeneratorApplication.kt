@@ -1,4 +1,4 @@
-package com.Val.NPCGenerator
+package com.Val.charactergenerator
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication

@@ -1,4 +1,4 @@
-import com.Val.NPCGenerator.FullName
+import com.Val.charactergenerator.FullName
 import io.kotest.core.spec.style.StringSpec
 import io.kotest.matchers.shouldBe
 

@@ -1,4 +1,4 @@
-package com.Val.NPCGenerator
+package com.Val.charactergenerator
 
 class Constantes {
     val vowels = arrayOf("a", "e", "i", "o", "u", "y")

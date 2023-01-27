@@ -1,5 +1,5 @@
-import com.Val.NPCGenerator.Race
-import com.Val.NPCGenerator.WeightedCollection
+import com.Val.charactergenerator.Race
+import com.Val.charactergenerator.WeightedCollection
 
 fun makeWeightedCollection() = WeightedCollection(
     listOf(1, 2, 3, 4),

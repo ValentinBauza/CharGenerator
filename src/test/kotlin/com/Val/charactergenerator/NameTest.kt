@@ -1,6 +1,6 @@
-import com.Val.NPCGenerator.Constantes
-import com.Val.NPCGenerator.Name
-import com.Val.NPCGenerator.randomIntUntilChosenValue
+import com.Val.charactergenerator.Constantes
+import com.Val.charactergenerator.Name
+import com.Val.charactergenerator.randomIntUntilChosenValue
 import io.kotest.core.spec.style.StringSpec
 import io.kotest.matchers.collections.shouldBeIn
 import io.kotest.matchers.shouldBe
