@@ -8,11 +8,11 @@
 		<version>3.0.1</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.Val</groupId>
-	<artifactId>NPCGenerator</artifactId>
+	<groupId>com.val</groupId>
+	<artifactId>charactergenerator</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>NPCGenerator</name>
-	<description>NPCGenerator Backend</description>
+	<name>Character Generator</name>
+	<description>Character Generator Backend</description>
 	<properties>
 		<java.version>17</java.version>
 		<kotlin.version>1.7.22</kotlin.version>
