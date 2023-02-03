@@ -11,4 +11,5 @@ fun main(args: Array<String>) {
 	val mainNPC = NPC()
 
 	println("${mainNPC.name} ${mainNPC.age} ${mainNPC.occupation} ${mainNPC.gender} ${mainNPC.alignment} ${mainNPC.appearance} ${mainNPC.raceName}")
+
 }
