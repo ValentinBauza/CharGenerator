@@ -1,4 +1,4 @@
-package com.Val.charactergenerator
+package com.valentin.charactergenerator
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
@@ -11,5 +11,4 @@ fun main(args: Array<String>) {
 	val mainNPC = NPC()
 
 	println("${mainNPC.name} ${mainNPC.age} ${mainNPC.occupation} ${mainNPC.gender} ${mainNPC.alignment} ${mainNPC.appearance} ${mainNPC.raceName}")
-
 }

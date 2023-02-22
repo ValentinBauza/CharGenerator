@@ -1,4 +1,4 @@
-package com.Val.charactergenerator
+package com.valentin.charactergenerator
 
 data class Race(
     val raceName: String,

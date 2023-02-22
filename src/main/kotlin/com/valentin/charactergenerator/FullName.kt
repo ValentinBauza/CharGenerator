@@ -1,4 +1,4 @@
-package com.Val.charactergenerator
+package com.valentin.charactergenerator
 
 class FullName(
     private val nameCount: Int,

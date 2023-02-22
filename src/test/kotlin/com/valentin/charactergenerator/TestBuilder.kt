@@ -1,5 +1,5 @@
-import com.Val.charactergenerator.Race
-import com.Val.charactergenerator.WeightedCollection
+import com.valentin.charactergenerator.Race
+import com.valentin.charactergenerator.WeightedCollection
 
 fun makeWeightedCollection() = WeightedCollection(
     listOf(1, 2, 3, 4),

@@ -1,4 +1,4 @@
-import com.Val.charactergenerator.FullName
+import com.valentin.charactergenerator.FullName
 import io.kotest.core.spec.style.StringSpec
 import io.kotest.matchers.shouldBe
 

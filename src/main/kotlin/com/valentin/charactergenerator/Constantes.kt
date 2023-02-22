@@ -1,4 +1,4 @@
-package com.Val.charactergenerator
+package com.valentin.charactergenerator
 
 class Constantes {
     val vowels = arrayOf("a", "e", "i", "o", "u", "y")

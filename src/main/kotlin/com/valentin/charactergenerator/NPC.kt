@@ -1,4 +1,4 @@
-package com.Val.charactergenerator
+package com.valentin.charactergenerator
 
 data class NPC(
     val race: Race = Constantes().races.randomContent() as Race,
