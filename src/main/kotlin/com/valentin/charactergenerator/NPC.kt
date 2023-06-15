@@ -2,7 +2,7 @@ package com.valentin.charactergenerator
 
 data class NPC(
     val race: Race = Constantes().races.randomContent() as Race,
-    val name: String = FullName(race.nameCount, race.nameWeight).fullName,
+    val name: String = FullName(race.nameCount, race.nameWeight, race.doubleVowelRate).fullName,
     val age: String = Constantes().age.random(),
     val gender: String = Constantes().gender.random(),
     val occupation: String = Constantes().occupation.random(),

@@ -14,8 +14,8 @@ class NPCController {
         return NPC()
     }
 
-    @PostMapping("/NPC")
-    fun postNPC(): NPC {
-        return NPC()
+    @GetMapping("/NPC/elf")
+    fun getElfNPC(): NPC {
+        return NPC(Constantes().elfRace)
     }
 }

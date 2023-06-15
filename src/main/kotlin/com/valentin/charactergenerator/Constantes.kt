@@ -5,6 +5,16 @@ class Constantes {
     val consonants =
         arrayOf("b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "n", "p", "q", "r", "s", "t", "v", "w", "x", "z")
     val races = makeRaces()
+    val elfRace = makeElfRace()
+    val humanRace = makeHumanRace()
+    val dwarfRace = makeDwarfRace()
+    val halflingRace = makeHalflingRace()
+    val halfelfRace = makeHalfelfRace()
+    val halforcRace = makeHalforcRace()
+    val gnomeRace = makeGnomeRace()
+    val tieflingRace = makeTieflingRace()
+    val dragonbornRace = makeDragonbornRace()
+    val orcRace = makeOrcRace()
     val gender = arrayOf("Male", "Female", "Non-binary")
     val age = arrayOf("Child", "Teenager", "Adult", "Middle-aged", "Elderly")
     val occupation = arrayOf(
@@ -110,17 +120,16 @@ class Constantes {
 
     private fun makeRaces(): WeightedCollection {
 
-        val human = makeRace("human", arrayListOf(3, 4, 5, 6, 7, 8, 9), arrayListOf(5, 10, 15, 20, 25, 20, 5), 2)
-        val orc = makeRace("orc", arrayListOf(3, 4, 5, 6), arrayListOf(30, 35, 25, 10), 1)
-        val elf = makeRace("elf", arrayListOf(5, 6, 7, 8, 9, 10), arrayListOf(10, 10, 25, 25, 20, 10), 3)
-        val dwarf = makeRace("dwarf", arrayListOf(5, 6, 7, 8, 9, 10), arrayListOf(5, 10, 15, 25, 25, 20), 3)
-        val halfling = makeRace("halfling", arrayListOf(5, 6, 7, 8), arrayListOf(30, 50, 15, 5), 2)
-        val tiefling = makeRace("tiefling", arrayListOf(5, 6, 7, 8, 9), arrayListOf(20, 25, 30, 20, 5), 1)
-        val gnome = makeRace("gnome", arrayListOf(5, 6, 7, 8), arrayListOf(40, 45, 10, 5), 2)
-        val halfelf = makeRace("half-elf", arrayListOf(5, 6, 7, 8, 9, 10), arrayListOf(5, 10, 25, 30, 25, 5), 3)
-        val halforc = makeRace("half-orc", arrayListOf(3, 4, 5, 6, 7), arrayListOf(5, 25, 40, 25, 5), 2)
-        val dragonborn =
-            makeRace("dragonborn", arrayListOf(6, 7, 8, 9, 10, 11, 12, 13, 14), arrayListOf(5, 10, 15, 10, 20, 15, 15, 5, 5), 3)
+        val human = makeHumanRace()
+        val orc = makeOrcRace()
+        val elf = makeElfRace()
+        val dwarf = makeDwarfRace()
+        val halfling = makeHalflingRace()
+        val tiefling = makeTieflingRace()
+        val gnome = makeGnomeRace()
+        val halfelf = makeHalfelfRace()
+        val halforc = makeHalforcRace()
+        val dragonborn = makeDragonbornRace()
 
         val raceContent = arrayListOf(human, orc, elf, dwarf, halfling, tiefling, gnome, halfelf, halforc, dragonborn)
         val raceWeights = arrayListOf(25, 10, 10, 10, 5, 5, 10, 10, 10, 5)
@@ -128,11 +137,52 @@ class Constantes {
         return WeightedCollection(raceContent, raceWeights)
     }
 
+    private fun makeDragonbornRace(): Race {
+        return makeRace("dragonborn", arrayListOf(6, 7, 8, 9, 10, 11, 12, 13, 14), arrayListOf(5, 10, 15, 10, 20, 15, 15, 5, 5), 3, 50)
+    }
+
+    private fun makeHalforcRace(): Race {
+        return makeRace("half-orc", arrayListOf(3, 4, 5, 6, 7), arrayListOf(5, 25, 40, 25, 5), 2, 10)
+    }
+
+    private fun makeHalfelfRace(): Race {
+        return makeRace("half-elf", arrayListOf(5, 6, 7, 8, 9, 10), arrayListOf(5, 10, 25, 30, 25, 5), 3, 40)
+    }
+
+    private fun makeGnomeRace(): Race {
+        return makeRace("gnome", arrayListOf(5, 6, 7, 8), arrayListOf(40, 45, 10, 5), 2, 30)
+    }
+
+    private fun makeTieflingRace(): Race {
+        return makeRace("tiefling", arrayListOf(5, 6, 7, 8, 9), arrayListOf(20, 25, 30, 20, 5), 1, 20)
+    }
+
+    private fun makeHalflingRace(): Race {
+        return makeRace("halfling", arrayListOf(5, 6, 7, 8), arrayListOf(30, 50, 15, 5), 2, 30)
+    }
+
+    private fun makeDwarfRace(): Race {
+        return makeRace("dwarf", arrayListOf(5, 6, 7, 8, 9, 10), arrayListOf(5, 10, 15, 25, 25, 20), 3, 10)
+    }
+
+    private fun makeOrcRace(): Race {
+        return makeRace("orc", arrayListOf(3, 4, 5, 6), arrayListOf(30, 35, 25, 10), 1, 5)
+    }
+
+    private fun makeElfRace(): Race {
+        return makeRace("elf", arrayListOf(5, 6, 7, 8, 9, 10), arrayListOf(10, 10, 25, 25, 20, 10), 3, 60)
+    }
+
+    private fun makeHumanRace(): Race {
+        return makeRace("human", arrayListOf(3, 4, 5, 6, 7, 8, 9), arrayListOf(5, 10, 15, 20, 25, 20, 5), 2, 30)
+    }
+
     private fun makeRace(
         raceName: String,
         raceNameLenghts: ArrayList<Int>,
         raceNameWeights: ArrayList<Int>,
-        raceNameCount: Int
-    ) = Race(raceName, WeightedCollection(raceNameLenghts, raceNameWeights), raceNameCount)
+        raceNameCount: Int,
+        raceDoubleVowelRate: Int
+    ) = Race(raceName, WeightedCollection(raceNameLenghts, raceNameWeights), raceNameCount, raceDoubleVowelRate)
 
 }

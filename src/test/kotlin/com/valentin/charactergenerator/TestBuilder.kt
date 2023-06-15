@@ -16,5 +16,5 @@ fun makeTestRace() = Race(
     WeightedCollection(
         arrayListOf(3, 4, 5, 6, 7, 8, 9),
         arrayListOf(5, 10, 15, 20, 25, 20, 5)
-    ), 2
+    ), 2, 30
 )
