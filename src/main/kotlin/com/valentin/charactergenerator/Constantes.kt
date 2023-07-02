@@ -15,6 +15,18 @@ class Constantes {
     val tieflingRace = makeTieflingRace()
     val dragonbornRace = makeDragonbornRace()
     val orcRace = makeOrcRace()
+    val racesToChoose = mapOf(
+        "elf" to elfRace,
+        "human" to humanRace,
+        "dwarf" to dwarfRace,
+        "halfling" to halflingRace,
+        "halfelf" to halfelfRace,
+        "halforc" to halforcRace,
+        "gnome" to gnomeRace,
+        "tiefling" to tieflingRace,
+        "dragonborn" to dragonbornRace,
+        "orc" to orcRace,
+        )
     val gender = arrayOf("Male", "Female", "Non-binary")
     val age = arrayOf("Child", "Teenager", "Adult", "Middle-aged", "Elderly")
     val occupation = arrayOf(
