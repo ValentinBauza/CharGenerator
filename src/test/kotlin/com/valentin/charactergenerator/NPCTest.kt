@@ -14,11 +14,12 @@ class NPCTest : StringSpec({
         testNPC.occupation shouldNotBe null
         testNPC.race shouldNotBe null
         testNPC.raceName shouldNotBe null
+        testNPC.description shouldNotBe null
     }
 
     "A defined NPC should be created with defined arguments" {
         val testRace = makeTestRace()
-        val testNPC = NPC(testRace, "John Doe", "Young", "Male", "Farmer", "Pretty", "Neutral")
+        val testNPC = NPC(testRace, "John Doe", "Young", "Male", "Farmer", "Pretty", "Neutral", "descriptionPlaceHolder")
         testNPC.name shouldBe "John Doe"
         testNPC.age shouldBe "Young"
         testNPC.alignment shouldBe "Neutral"
@@ -27,5 +28,6 @@ class NPCTest : StringSpec({
         testNPC.occupation shouldBe "Farmer"
         testNPC.race shouldBe testRace
         testNPC.raceName shouldBe "human"
+        testNPC.description shouldBe "descriptionPlaceHolder"
     }
 })

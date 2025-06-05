@@ -15,4 +15,11 @@ class NPCController {
     ): NPC {
         return NPC(Constantes().racesToChoose.getOrDefault(race, Constantes().races.randomContent() as Race))
     }
+
+    @GetMapping("/NPC/random")
+    fun getRandomNPC(
+    ): NPC {
+        return NPC()
+    }
+
 }

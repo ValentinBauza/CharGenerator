@@ -11,6 +11,6 @@ fun main(args: Array<String>) {
 	val mainNPC = NPC()
 	val elfNPC = NPC(Constantes().elfRace)
 
-	println("Randomly generated character: ${mainNPC.name} ${mainNPC.age} ${mainNPC.occupation} ${mainNPC.gender} ${mainNPC.alignment} ${mainNPC.appearance} ${mainNPC.raceName}")
-	println("Randomly generated elf character: ${elfNPC.name} ${elfNPC.age} ${elfNPC.occupation} ${elfNPC.gender} ${elfNPC.alignment} ${elfNPC.appearance} ${elfNPC.raceName}")
+	println("Randomly generated character: ${mainNPC.name} ${mainNPC.age} ${mainNPC.occupation} ${mainNPC.gender} ${mainNPC.alignment} ${mainNPC.appearance} ${mainNPC.raceName} ${mainNPC.description}")
+	println("Randomly generated elf character: ${elfNPC.name} ${elfNPC.age} ${elfNPC.occupation} ${elfNPC.gender} ${elfNPC.alignment} ${elfNPC.appearance} ${elfNPC.raceName} ${elfNPC.description}")
 }
